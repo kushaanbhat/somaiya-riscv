@@ -14,7 +14,8 @@ This github repository records the progress made during 1 month internship under
 #### Day 1 - Introduction to RISC-V ISA and GNU compiler toolchain
 <details>
   <summary>Introduction to RISC-V basic keywords</summary>
-![Compilation of C Program](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/c01fcd16-9331-431f-8400-e342bd5655be)
+![Compilation of C Program](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/5f315d13-dcc5-442b-a91f-49a4c08a61d7)
+
 
 </details>
 
