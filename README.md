@@ -24,6 +24,18 @@ This GitHub repository records the progress made during a 1-month internship und
 ### Day 1 - Introduction to RISC-V ISA and GNU compiler toolchain
 <details>
   <summary>Introduction to RISC-V basic keywords</summary>
+  RISC-V ISA is a base integer ISA and must be present in any implementation along with some optional extension. The RISC-V has been designed to support extensive customization and specialization which can be extended  with  one  or  more  optional  instruction-set  extensions,  but  the  base  integer instructions cannot be redefined. The different instructions included in RISC-V are listed below.
+
+1. Pseudo instructions - For e.g- mv,li,ret etc
+2. Base integer instruction (RV64I, RV32I)-For e.g-lui,addi etc
+3. Multiply extension (RV64M) -For e.g- mulw,divw etc
+4. Single and double floating point instruction (RV64F, RV64D) -For e.g- flw,fadd etc
+5. Application binary instruction 
+6. Memory allocation and stack pointer
+
+The details of the RISC-V instructions set manual can be found [The RISC-V Instruction Set Manual](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
+
+Each base integer set is characterized by the  width  of the register (XLEN) and the size of the user address space. The most important advantage of RISC-V is that it is an open standard instruction which is easily available for academics and commercial purposes free of cost.
 </details>
 
 <details>
