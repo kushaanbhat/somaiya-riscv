@@ -7,8 +7,14 @@ This GitHub repository records the progress made during a 1-month internship und
 # Week 0
 
 ## Task 1 - Installation of vsdsquadron.vdi and Virtual Box (for Ubuntu)
+
 <details>
-  <summary>Snapshot of Successful Installation</summary>
+  <summary>Resource & Snapshot of Successful Installation</summary>
+
+  Resource for installation and Setup of vsdsquadron.vdi and Virtual Box (for Ubuntu)
+  [StepsToSetupLabs.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/13813451/StepsToSetupLabs.pdf)
+  
+  Snapshot: 
 </details>
 
 # Week 1
@@ -22,6 +28,31 @@ This GitHub repository records the progress made during a 1-month internship und
 
 <details>
   <summary>Labwork for RISC-V software toolchain</summary>
+  1 ) Write a C program for finding the sum of integers from 1 to n and name it as sum1ton.c 
+  Following is the C program:
+  
+  ```C
+#include <stdio.h>
+
+int main(){
+    int i,  sum=0 , n=100;
+    for(i=0, i<=n; i++){
+        sum = sum  + i;
+    }
+    printf("Sum of numbers 0 to %d is %d ", n, sum);
+    return 0;
+}
+  ```
+ 2 ) Compile the Program using the following command on terminal
+```bash
+    gcc sum1ton.c
+```
+
+ 3 ) Then run the Program using the following command on terminal
+```bash
+    ./a.out
+```
+
 </details>
 
 <details>
@@ -38,5 +69,5 @@ This GitHub repository records the progress made during a 1-month internship und
 </details>
 
 <details>
-  <summary>Basic verification flow using iverilog</summary>
+  <summary>Basic verification flow using verilog</summary>
 </details>
