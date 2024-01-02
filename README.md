@@ -6,7 +6,8 @@ This GitHub repository records the progress made during a 1-month internship und
 # Weekwise Details
 
 ## Week 0:- Installation of vsdsquadron.vdi and Virtual Box (for Ubuntu)
-![Week-0-Task-1-Successful-Installation](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/1d3eb3a7-b16b-470e-939b-b5e23ab0f1e2)
+
+### Task 1
 
 ## Week 1
 
