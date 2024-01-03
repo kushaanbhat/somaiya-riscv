@@ -148,6 +148,31 @@ To quit the filter use the following command
 
 <details>
   <summary>Integer number representation</summary>
+  
+  ```C
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+  unsigned long long int max = (unsigned long long int)(pow(2,64)-1);
+  printf("Highest Number represented by unsigned long long int is %llu \n", max);
+  return 0;
+}
+  ```
+
+  ```C
+#include <stdio.h>
+#include <math.h>
+
+int main(){
+	long long int max = (long long int)(pow(2,64)-1);
+	long long int min = (long long int)(pow(2,64)*-1);
+	printf("Highest Number represented by signed long long int is %llu \n", max);
+	printf("Lowest Number represented by signed long long int is %llu \n", min);
+	return 0;
+}
+  ```
+
 </details>
 
 ### Day 2 - Introduction to ABI and basic verification flow
@@ -157,6 +182,36 @@ To quit the filter use the following command
 
 <details>
   <summary>Lab work using ABI function calls</summary>
+
+  ```C
+#include <stdio.h>
+
+extern int load(int x, int y)
+
+int main(){
+  int result = 0;
+  int count = 9;
+  result = load(0x0, count+1);
+  printf("Sum of numbers 0 to %d is %d ", count, result);
+}
+  ```
+
+ ```C
+.section .text
+.global load
+.type load, @functon
+
+load:
+	add a4, a0, zero
+	add a3, a0, a1
+	add a3, a0, zero
+loop :	add a4, a3, a4
+	addi a3, a3, 1
+	blt a3, a2, loop
+	add a0, a4, zero
+	ret
+  ```
+  
 </details>
 
 <details>
