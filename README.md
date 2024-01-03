@@ -173,6 +173,18 @@ int main(){
 }
   ```
 
+ Compile the Program using the following command on terminal
+```bash
+    gcc {{filename}}
+```
+
+ Then run the Program using the following command on terminal
+```bash
+    ./a.out
+```
+
+![Screenshot 2024-01-03 132320](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/795f27aa-fd2d-434a-a7c1-f5642da24b14)
+
 </details>
 
 ### Day 2 - Introduction to ABI and basic verification flow
@@ -182,6 +194,8 @@ int main(){
 
 <details>
   <summary>Lab work using ABI function calls</summary>
+	
+![Screenshot 2024-01-03 132819](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/1eeb5640-0089-462d-87f5-26175a950e38)
 
   ```C
 #include <stdio.h>
