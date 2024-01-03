@@ -44,6 +44,11 @@ Each base integer set is characterized by the  width  of the register (XLEN) and
   <summary>Labwork for RISC-V software toolchain</summary>
   1 ) Write a C program for finding the sum of integers from 1 to n and name it as sum1ton.c 
   Following is the C program:
+  #Note: Install Leafpad a code editor using following command 
+  
+```bash
+    
+```
   
   ```C
 #include <stdio.h>
