@@ -15,6 +15,8 @@ This GitHub repository records the progress made during a 1-month internship und
   [StepsToSetupLabs.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/13813451/StepsToSetupLabs.pdf)
   
   Snapshot: 
+  ![Sucessful Installation and Launch of Workspace](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/c2c85475-a12c-493c-857a-a6aff015b31f)
+  
 </details>
 
 # Week 1
