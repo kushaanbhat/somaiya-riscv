@@ -37,18 +37,14 @@ This GitHub repository records the progress made during a 1-month internship und
 
 The details of the RISC-V instructions set manual can be found [The RISC-V Instruction Set Manual](https://riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf).
 
-Each base integer set is characterized by the  width  of the register (XLEN) and the size of the user address space. The most important advantage of RISC-V is that it is an open standard instruction which is easily available for academics and commercial purposes free of cost.
+Each base integer set is characterized by the  width  of the register (XLEN) and the size of the user address space. The most important advantage of RISC-V is that it is an open standard instruction that is easily available for academic and commercial purposes free of cost.
 </details>
 
 <details>
   <summary>Labwork for RISC-V software toolchain</summary>
-  1 ) Write a C program for finding the sum of integers from 1 to n and name it as sum1ton.c 
+  1 ) Write a C program for finding the sum of integers from 1 to n and name it sum1ton.c 
   Following is the C program:
-  #Note: Install Leafpad a code editor using following command 
   
-```bash
-    sudo snap install leafpad
-```
   
   ```C
 #include <stdio.h>
@@ -62,6 +58,11 @@ int main(){
     return 0;
 }
   ```
+#Note: Install Leafpad a code editor using the following command 
+```bash
+    sudo snap install leafpad
+```
+
  2 ) Compile the Program using the following command on terminal
 ```bash
     gcc sum1ton.c
@@ -70,6 +71,77 @@ int main(){
  3 ) Then run the Program using the following command on terminal
 ```bash
     ./a.out
+```
+![Screenshot 2024-01-03 104318](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/bb83236b-8ff7-435e-8c7c-59d12102c1c1)
+
+ 4 ) To view sum1ton.c on the terminal use the following command
+```bash
+    cat sum1ton.c
+```
+
+ 5 ) To compile the program on RISC-V gcc use the following command (Option 1)
+```bash
+    riscv64-unknown-elf-gcc -O1 -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+Subsequently, use the following command (to create sum1ton.o)
+```bash
+    ls -ltr sum1ton.o
+```
+![Screenshot 2024-01-03 105320](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/57bd9a82-ff11-4439-936a-0a46c896f8e0)
+
+ 6 ) Now open a new tab of the terminal and use the following command
+```bash
+    riscv64-unknown-elf-objdump -d sum1ton.o
+```
+To filter instructions belonging to main() use the following command
+
+```bash
+    riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+
+To find instructions belonging to main() use the following command
+
+```bash
+    :/main
+```
+![Screenshot 2024-01-03 105706](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/ce7e8741-ca2e-484b-9530-90ff627a242f)
+
+No of Instructions in main() = (101c0 - 10184)/4
+                             = 3c
+                             = f (15 in decimal)
+
+To quit the filter use the following command
+```bash
+    :q
+```
+
+7 ) To compile the program on RISC-V gcc use the following command (Option fast)
+```bash
+    riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+![Screenshot 2024-01-03 105902](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/c591e3e6-3c63-4c84-94f6-3d1e7fb3bbc3)
+
+ 8 ) Again visit the other tab and use the following command
+
+```bash
+    riscv64-unknown-elf-objdump -d sum1ton.o | less
+```
+![Screenshot 2024-01-03 105914](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/b2abb0a9-85d8-4644-bf2f-585345ea3089)
+
+To find instructions belonging to main() use the following command
+
+```bash
+    :/main
+```
+![Screenshot 2024-01-03 110001](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/8afbde47-c801-4086-a210-0858dc7609a5)
+
+No of Instructions in main() = (100e0 - 100bo)/4
+                             = 30
+                             = c (12 in decimal)
+
+To quit the filter use the following command
+```bash
+    :q
 ```
 
 </details>
