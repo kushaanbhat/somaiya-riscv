@@ -47,7 +47,7 @@ Each base integer set is characterized by the  width  of the register (XLEN) and
   #Note: Install Leafpad a code editor using following command 
   
 ```bash
-    
+    sudo snap install leafpad
 ```
   
   ```C
