@@ -197,6 +197,8 @@ int main(){
 	
 ![Screenshot 2024-01-03 132819](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/1eeb5640-0089-462d-87f5-26175a950e38)
 
+The code for 1to9_custom.c is given below
+
   ```C
 #include <stdio.h>
 
@@ -209,8 +211,9 @@ int main(){
   printf("Sum of numbers 0 to %d is %d ", count, result);
 }
   ```
+The code for load.S is given below
 
- ```C
+ ```ASM
 .section .text
 .global load
 .type load, @functon
@@ -225,6 +228,18 @@ loop :	add a4, a3, a4
 	add a0, a4, zero
 	ret
   ```
+To compile the program on RISC-V gcc use the following command (Option fast)
+```bash
+    riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o 1to9_custom.o 1to9_custom.c load.S
+```
+
+```bash
+    riscv64-unknown-elf-objdump -d 1to9_custom.c.o | less
+```
+
+![Screenshot 2024-01-05 101050](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/ca681616-f577-4abb-832b-84bf8b942cee)
+
+![Screenshot 2024-01-05 101101](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/bfac1047-3f15-42f6-afdb-a6b9093083bf)
   
 </details>
 
