@@ -237,10 +237,10 @@ To compile the program on RISC-V gcc use the following command (Option fast)
     riscv64-unknown-elf-objdump -d 1to9_custom.c.o | less
 ```
 
-![Screenshot 2024-01-05 101050](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/ca681616-f577-4abb-832b-84bf8b942cee)
+![Screenshot 2024-01-05 101906](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/b37b8772-8be0-4662-b4a8-65b13509bb6c)
 
-![Screenshot 2024-01-05 101101](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/bfac1047-3f15-42f6-afdb-a6b9093083bf)
-  
+![Screenshot 2024-01-05 101915](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/4e66c317-6d94-49da-b14e-d28c83a91cd5)
+
 </details>
 
 <details>
