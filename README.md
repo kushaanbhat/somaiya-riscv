@@ -203,14 +203,11 @@ Now run the code on RISC-V Complier using the following command
     spike pk {{file_name}}.o
 ```
 
-![Screenshot 2024-01-15 210049](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/0d96c0f2-f0b6-4c3c-9ede-8d2536e534db)
+![Screenshot 2024-01-15 211300](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/acf4309b-33af-4bea-80d3-8c98f6cbbc23)
 
 </details>
 
 ### Day 2 - Introduction to ABI and basic verification flow
-<details>
-  <summary>Application Binary interface (ABI)</summary>
-</details>
 
 <details>
   <summary>Lab work using ABI function calls</summary>
@@ -269,8 +266,4 @@ Now run the code on RISC-V Complier using the following command
 
 ![Screenshot 2024-01-15 210227](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/331a8cc3-a497-400d-a294-1c9cb2e83574)
 
-</details>
-
-<details>
-  <summary>Basic verification flow using verilog</summary>
 </details>
