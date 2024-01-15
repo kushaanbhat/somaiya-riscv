@@ -190,9 +190,8 @@ int main(){
     ./a.out
 ```
 
-![Screenshot 2024-01-03 132320](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/795f27aa-fd2d-434a-a7c1-f5642da24b14)
-
 RISC-V Complier
+
 ```bash
     riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o {{file_name}}.o {{file_name}}.c
 ```
@@ -203,7 +202,7 @@ Now run the code on RISC-V Complier using the following command
     spike pk {{file_name}}.o
 ```
 
-![Screenshot 2024-01-15 211300](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/acf4309b-33af-4bea-80d3-8c98f6cbbc23)
+![Screenshot 2024-01-15 211905](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/78b54685-51a4-4d5e-ae27-3f3f4e458179)
 
 </details>
 
