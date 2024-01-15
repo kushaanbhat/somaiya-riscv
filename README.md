@@ -143,6 +143,13 @@ To quit the filter use the following command
 ```bash
     :q
 ```
+ 9 ) Now run the code on RISC-V Complier using the following command
+
+```bash
+    spike pk sum1ton.o
+```
+
+![Screenshot 2024-01-15 205421](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/cff688ba-002f-4deb-86b3-1a9cab352758)
 
 </details>
 
@@ -184,6 +191,19 @@ int main(){
 ```
 
 ![Screenshot 2024-01-03 132320](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/795f27aa-fd2d-434a-a7c1-f5642da24b14)
+
+RISC-V Complier
+```bash
+    riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o {{file_name}}.o {{file_name}}.c
+```
+
+Now run the code on RISC-V Complier using the following command
+
+```bash
+    spike pk {{file_name}}.o
+```
+
+![Screenshot 2024-01-15 210049](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/0d96c0f2-f0b6-4c3c-9ede-8d2536e534db)
 
 </details>
 
@@ -240,6 +260,14 @@ To compile the program on RISC-V gcc use the following command (Option fast)
 ![Screenshot 2024-01-05 101906](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/b37b8772-8be0-4662-b4a8-65b13509bb6c)
 
 ![Screenshot 2024-01-05 101915](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/4e66c317-6d94-49da-b14e-d28c83a91cd5)
+
+Now run the code on RISC-V Complier using the following command
+
+```bash
+    spike pk 1to9_custom.o
+```
+
+![Screenshot 2024-01-15 210227](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/331a8cc3-a497-400d-a294-1c9cb2e83574)
 
 </details>
 
