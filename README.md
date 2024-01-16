@@ -266,3 +266,20 @@ Now run the code on RISC-V Complier using the following command
 ![Screenshot 2024-01-15 210227](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/331a8cc3-a497-400d-a294-1c9cb2e83574)
 
 </details>
+
+# Week 2
+
+## Task 1 - Installation of RISC-V PlatformIO and Blinking LED Code
+
+<details>
+  <summary>RISC-V PlatformIO and Blinking LED Code</summary>
+	
+![Screenshot 2024-01-16 184349](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/ec6fc881-e36f-47b2-9b73-783f33e7db1e)
+
+![Screenshot 2024-01-16 184537](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/f0985267-1116-454f-a72d-c5f428089d97)
+
+![Screenshot 2024-01-16 184825](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/91af7cd0-5863-46f3-8a5a-d28a472a3ede)
+
+![Screenshot 2024-01-16 184849](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/46f9e7e3-dd11-4aaa-89ca-0227d7b6ac9b)
+
+</details>
