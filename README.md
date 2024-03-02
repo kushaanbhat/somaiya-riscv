@@ -1,4 +1,4 @@
-# RISC-V Internship
+[CH32V003DS0.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468320/CH32V003DS0.pdf)# RISC-V Internship
 
 This GitHub repository records the progress made during a 1-month internship under Mr. Kunal Ghosh, Founder, VSD.
 
@@ -6,7 +6,7 @@ This GitHub repository records the progress made during a 1-month internship und
 
 # Week 0
 
-## Task 1 - Installation of vsdsquadron.vdi and Virtual Box (for Ubuntu)
+## Installation of vsdsquadron.vdi and Virtual Box (for Ubuntu)
 
 <details>
   <summary>Resource & Snapshot of Successful Installation</summary>
@@ -20,8 +20,6 @@ This GitHub repository records the progress made during a 1-month internship und
 </details>
 
 # Week 1
-
-## Task 1
 
 ### Day 1 - Introduction to RISC-V ISA and GNU compiler toolchain
 <details>
@@ -267,9 +265,16 @@ Now run the code on RISC-V Complier using the following command
 
 </details>
 
+
 # Week 2
 
-## Task 1 - Installation of RISC-V PlatformIO and Blinking LED Code
+<details>
+  <summary>VSDSquadron Mini Board Research Forms</summary>
+	
+</details>
+
+
+### Installation of RISC-V PlatformIO and Blinking LED Code
 
 <details>
   <summary>RISC-V PlatformIO and Blinking LED Code</summary>
@@ -281,5 +286,91 @@ Now run the code on RISC-V Complier using the following command
 ![Screenshot 2024-01-16 184825](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/91af7cd0-5863-46f3-8a5a-d28a472a3ede)
 
 ![Screenshot 2024-01-16 184849](https://github.com/kushaanbhat/somaiya-riscv/assets/109136280/46f9e7e3-dd11-4aaa-89ca-0227d7b6ac9b)
+
+</details>
+
+# Week 3
+
+<details>
+  <summary>How to write Basic Code</summary>
+	1. Include Header Files:
+	
+```c
+#include <ch32v00x.h>
+#include <debug.h>
+```
+2. Pin Configurations:
+
+```c
+void GPIO_Config(void)
+{
+GPIO_InitTypeDef GPIO_InitStructure = {0}; //structure variable used for the GPIO configuration
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // to Enable the clock for Port D
+}
+```
+
+Input Pin Definition:
+```c
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_X | GPIO_Pin_Y | GPIO_Pin_Z ; // Defines which Pin to
+configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU;
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+```
+
+Output Pin Definition:
+```c
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_X | GPIO_Pin_Y | GPIO_Pin_Z ; // Defines which Pin to
+configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Defines Output Type
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Defines speed
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+```
+Pin Description According to the Header File ch32v00x.h
+```c
+PD0 => GPIO_Pin_0
+PD1 => GPIO_Pin_1
+PD2 => GPIO_Pin_2
+PD3 => GPIO_Pin_3
+PD4 => GPIO_Pin_4
+PD5 => GPIO_Pin_5
+PD6 => GPIO_Pin_6
+PD7 => GPIO_Pin_7
+```
+3. Main Function:
+```c
+int main(void)
+{
+uint8_t b0, b1, b2, g0 , g1, g2 = 0;
+NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+SystemCoreClockUpdate();
+Delay_Init();
+GPIO_Config();
+while(1)
+{
+}
+}
+```
+```c
+5. Input / Output Statements:
+b0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4); //Input Statement
+GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET); //Reset Output Pin
+GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
+```
+</details>
+
+# Week 4
+
+<details>
+  <summary>Project: Binary to Gray Converter Using VSDSquadron Mini</summary>
+	[Project Report](https://drive.google.com/file/d/12cUG2bix1QhM1PYhgAilZgHISEdt_eQs/view)
+	[Project Simulation Video](https://drive.google.com/file/d/1deFyWZ12QZTANybmY95NJkpclLE_c6nJ/view)
+</details>
+
+# References:
+<details>
+  <summary>Refernce Links</summary>
+	[SquadronMini_2A_Schematic.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468318/SquadronMini_2A_Schematic.pdf)
+	[datasheet.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468319/datasheet.pdf)
+	[CH32V003DS0.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468325/CH32V003DS0.pdf)
 
 </details>
