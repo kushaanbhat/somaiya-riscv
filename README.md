@@ -1,4 +1,4 @@
-[CH32V003DS0.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468320/CH32V003DS0.pdf)# RISC-V Internship
+# RISC-V Internship
 
 This GitHub repository records the progress made during a 1-month internship under Mr. Kunal Ghosh, Founder, VSD.
 
@@ -362,15 +362,24 @@ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); //Set Output Pin
 
 <details>
   <summary>Project: Binary to Gray Converter Using VSDSquadron Mini</summary>
-	[Project Report](https://drive.google.com/file/d/12cUG2bix1QhM1PYhgAilZgHISEdt_eQs/view)
-	[Project Simulation Video](https://drive.google.com/file/d/1deFyWZ12QZTANybmY95NJkpclLE_c6nJ/view)
+	
+Project Report:
+(https://drive.google.com/file/d/12cUG2bix1QhM1PYhgAilZgHISEdt_eQs/view)
+
+Project Simulation Video:
+(https://drive.google.com/file/d/1deFyWZ12QZTANybmY95NJkpclLE_c6nJ/view)
+ 
 </details>
 
 # References:
 <details>
   <summary>Refernce Links</summary>
-	[SquadronMini_2A_Schematic.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468318/SquadronMini_2A_Schematic.pdf)
-	[datasheet.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468319/datasheet.pdf)
-	[CH32V003DS0.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468325/CH32V003DS0.pdf)
+	
+[SquadronMini_2A_Schematic.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468318/SquadronMini_2A_Schematic.pdf)
+ 
+[datasheet.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468319/datasheet.pdf)
 
+[CH32V003DS0.pdf](https://github.com/kushaanbhat/somaiya-riscv/files/14468325/CH32V003DS0.pdf)
+
+https://pallavaggarwal.medium.com/ch32v003-programming-tutorial-be0145590fe8
 </details>
